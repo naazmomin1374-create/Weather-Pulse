@@ -1,0 +1,16 @@
+temperature,humidity,pressure,wind_speed,weather
+32,65,1012,12,Sunny
+30,70,1010,10,Cloudy
+28,85,1008,18,Rainy
+35,55,1015,8,Sunny
+27,90,1005,22,Rainy
+31,68,1011,11,Cloudy
+36,50,1016,7,Sunny
+26,92,1004,25,Rainy
+29,78,1009,15,Cloudy
+34,60,1013,9,Sunny
+25,95,1003,28,Rainy
+30,72,1010,13,Cloudy
+33,58,1014,9,Sunny
+28,82,1007,20,Rainy
+31,75,1011,14,Cloudy
