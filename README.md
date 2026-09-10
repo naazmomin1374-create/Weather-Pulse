@@ -1,37 +1,17 @@
 # 🌦️ Weather Pulse
 
-### AI-Powered Weather & Event Intelligence System
+### AI-Powered Weather & Event Intelligence
 
-Weather Pulse is a Machine Learning and NLP-based system designed to analyze weather information and weather-related reports.
-
-The project combines **weather prediction, weather event classification, and duplicate report detection** in one simple dashboard.
-
----
+Weather Pulse is a Machine Learning-based system designed to analyze weather data, classify weather-related events, and detect duplicate weather reports.
 
 ## 🚀 Features
 
-### 🌤️ Weather Prediction
-Uses a **Random Forest Classifier** to predict weather conditions based on:
-
-- Temperature
-- Humidity
-- Atmospheric Pressure
-- Wind Speed
-
-### 🚨 Weather Event Classification
-Uses **Natural Language Processing (NLP)** and **TF-IDF** with a **Multinomial Naive Bayes** model to classify weather-related reports into events such as:
-
-- Flood
-- Heatwave
-- Fog
-- Thunderstorm
-
-### 🔍 Duplicate Report Detection
-Uses **Cosine Similarity** to compare a new weather report with existing reports and identify whether it may be a duplicate.
-
-The system also displays the most similar existing report and its similarity score.
-
----
+- 🌤️ Weather condition prediction using Machine Learning
+- 🚨 Weather event classification using NLP
+- 🔍 Duplicate report detection using text similarity
+- 📊 Interactive Streamlit dashboard
+- 📁 CSV-based datasets
+- 🤖 Machine Learning models using Python and Scikit-learn
 
 ## 🧠 Technologies Used
 
@@ -39,27 +19,31 @@ The system also displays the most similar existing report and its similarity sco
 - Pandas
 - Scikit-learn
 - Streamlit
-- Natural Language Processing (NLP)
 - TF-IDF
-- Random Forest
 - Multinomial Naive Bayes
+- Random Forest Classifier
 - Cosine Similarity
-
----
 
 ## 📊 Model Performance
 
-| Module | Model / Technique | Accuracy |
-|---|---|---:|
+| Module | Technique | Accuracy / Method |
+|---|---|---|
 | Weather Prediction | Random Forest Classifier | 66.67% |
 | Event Classification | TF-IDF + Multinomial Naive Bayes | 75% |
 | Duplicate Detection | Cosine Similarity | Similarity-based |
 
 > Accuracy values are based on the current project dataset and may change with a larger or different dataset.
 
----
+## 🔍 How Duplicate Detection Works
 
-## 📁 Project Structure
+The system compares a new weather/event report with existing reports using **Cosine Similarity**.
+
+- High similarity → Possible duplicate report
+- Low similarity → New report
+
+For example, an exact report already present in the dataset can produce a **100% similarity score**. A new report can have a lower score, such as **51.31%**, and be identified as a new report.
+
+## 📂 Project Structure
 
 ```text
 Weather-Pulse/
@@ -74,3 +58,30 @@ Weather-Pulse/
     ├── event_data.csv
     ├── main.py
     └── weather_data.csv
+▶️ How to Run
+1. Clone the repository
+git clone https://github.com/naazmomin1374-create/Weather-Pulse.git
+2. Open the project folder
+cd Weather-Pulse
+3. Install the required libraries
+pip install pandas scikit-learn streamlit
+4. Run the dashboard
+python -m streamlit run dashboard.py
+
+The Weather Pulse dashboard will open in your browser.
+
+💡 Project Purpose
+
+Weather Pulse demonstrates how Machine Learning and Natural Language Processing can be used to support weather and disaster-related data analysis.
+
+The system combines:
+
+Weather Prediction + Event Classification + Duplicate Detection
+
+into one interactive dashboard.
+
+👩‍💻 Project
+
+Weather Pulse — Smart India Hackathon Project
+
+Developed using Python, Machine Learning, NLP, and Streamlit.
